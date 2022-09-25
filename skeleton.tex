@@ -6,6 +6,15 @@
 \setCJKmainfont{UD Digi Kyokasho NK-R}
 \usepackage[sfdefault]{biolinum}
 
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out,
+    linktocpage
+}
+
 \MakeOuterQuote{"}
 \MakeInnerQuote{>}
 
@@ -17,17 +26,17 @@ Octopath Traveler: \emph{insert good subtitle} \\
 \author{%
 鰤/牙 \\
 Blitz/Kiva \\
-Translated by lynne
+Translated by \href{https://twitter.com/plvpwaa}{lynne}
 }
 \date{%
 July 20, 2019 \\
-Last translation revision \today  (5.5\%, 14/254 pages)
+Last translation revision \today
 }
 
 \begin{document}
 	\maketitle
 	\pagebreak
-	\tableofcontents
+	\tableofcontents*
 	\pagebreak
 	\chapter{Professor Albright's Hands-On Learning}
 		\input{chapter-01}

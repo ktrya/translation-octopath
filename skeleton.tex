@@ -3,8 +3,9 @@
 \usepackage[autostyle, english=american]{csquotes}
 \usepackage[T1]{fontenc}
 \usepackage{xeCJK}
-\setCJKmainfont{Noto Sans JP}
+\setCJKmainfont{FOT-NewCinemaA Std D}
 \usepackage[sfdefault]{biolinum}
+\usepackage{enotez}
 
 \usepackage{color}
 \usepackage{hyperref}
@@ -17,6 +18,13 @@
 
 \MakeOuterQuote{"}
 \MakeInnerQuote{>}
+
+\setenotez{
+	list-name={Translator's Notes},
+	list-heading={\section*{#1}},
+	reset=true,
+	backref=true
+}
 
 
 \title{%
@@ -46,7 +54,7 @@ Last translation revision \today
 	\chapter{Trust and Betrayal}
 		\input{chapter-02}
 	\chapter{On the Eve of a Blizzard}
-	\chapter{One More Dance, After}
+	\chapter{A Dance After Journey's End}
 		\input{chapter-04}
 	\chapter{Epilogue}
 \end{document}
